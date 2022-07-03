@@ -53,7 +53,7 @@ sᴜᴄᴄᴇssғᴜʟʟʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ 💘
 ❄ **ʟɪɴᴋ :** `{photo}`
 """
         await m.delete()
-        await fallen.send_photo(
+        await amelia.send_photo(
             message.chat.id,
             photo=photo,
             caption=caption,

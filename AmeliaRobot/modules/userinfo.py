@@ -31,7 +31,7 @@ from AmeliaRobot.modules.sql.afk_sql import is_afk, check_afk_status
 from AmeliaRobot.modules.sql.users_sql import get_user_num_chats
 from AmeliaRobot.modules.helper_funcs.chat_status import sudo_plus
 from AmeliaRobot.modules.helper_funcs.extraction import extract_user
-from AmeliaRobot import telethn as FallenTelethonClient, TIGERS, DRAGONS, DEMONS
+from AmeliaRobot import telethn as AmeliaTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):

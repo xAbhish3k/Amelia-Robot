@@ -14,7 +14,7 @@ from AmeliaRobot.modules.helper_funcs.alternate import typing_action
 # from AmeliaRobot.modules.rules import get_rules
 import AmeliaRobot.modules.sql.rules_sql as rulessql
 
-# from FallenRobot.modules.sql import warns_sql as warnssql
+# from AmeliaRobot.modules.sql import warns_sql as warnssql
 import AmeliaRobot.modules.sql.blacklist_sql as blacklistsql
 from AmeliaRobot.modules.sql import disable_sql as disabledsql
 
@@ -325,7 +325,7 @@ def export_data(update, context):
         },
     }
     baccinfo = json.dumps(backup, indent=4)
-    with open("FallenRobot{}.backup".format(chat_id), "w") as f:
+    with open("AmeliaRobot{}.backup".format(chat_id), "w") as f:
         f.write(str(baccinfo))
     context.bot.sendChatAction(current_chat_id, "upload_document")
     tgl = time.strftime("%H:%M:%S - %d/%m/%Y", time.localtime(time.time()))

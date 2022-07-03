@@ -14,7 +14,7 @@ ANON = "https://telegra.ph/file/329647a798cccb101aecf.jpg"
 async def repo(client, message):
     await message.reply_photo(
         photo=ANON,
-        caption=f"""**ʜᴇʏ​ {message.from_user.mention()},\n\nɪ ᴀᴍ [Amelia ʀᴏʙᴏᴛ-🇮🇩](t.me/ameliagroup_bot)**
+        caption=f"""**ʜᴇʏ​ {message.from_user.mention()},\n\nɪ ᴀᴍ [Amelia ʀᴏʙᴏᴛ-🇮🇳](t.me/ameliagroup_bot)**
 
 **» ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ :** [Abhishek](tg://user?id=1891078417")
 **» ᴩʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{y()}`

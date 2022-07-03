@@ -6,7 +6,7 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import FallenRobot.modules.sql.blacklist_sql as sql
+import AmeliaRobot.modules.sql.blacklist_sql as sql
 from AmeliaRobot import dispatcher, LOGGER
 from AmeliaRobot.modules.disable import DisableAbleCommandHandler
 from AmeliaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin

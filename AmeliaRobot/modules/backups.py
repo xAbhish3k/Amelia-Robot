@@ -11,7 +11,7 @@ from AmeliaRobot.__main__ import DATA_IMPORT
 from AmeliaRobot.modules.helper_funcs.chat_status import user_admin
 from AmeliaRobot.modules.helper_funcs.alternate import typing_action
 
-# from FallenRobot.modules.rules import get_rules
+# from AmeliaRobot.modules.rules import get_rules
 import AmeliaRobot.modules.sql.rules_sql as rulessql
 
 # from FallenRobot.modules.sql import warns_sql as warnssql

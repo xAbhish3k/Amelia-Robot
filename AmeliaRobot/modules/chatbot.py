@@ -138,7 +138,7 @@ def chatbot(update: Update, context: CallbackContext):
             return
         anon = message.text
         bot.send_chat_action(chat_id, action="typing")
-        url = f"https://kukiapi.xyz/api/apikey=1356469075-KUKIkq4WMg5FV4/Fallen/Anonymous/message={anon}"
+        url = f"https://kukiapi.xyz/api/apikey=1891078417-KUKIkq4WMg5FV4/Amelia/Abhishek/message={anon}"
         request = requests.get(url)
         results = json.loads(request.text)
         result = f"{results['reply']}"
@@ -148,7 +148,7 @@ def chatbot(update: Update, context: CallbackContext):
 
 def list_all_chats(update: Update, context: CallbackContext):
     chats = sql.get_all_kuki_chats()
-    text = "<b>Fallen Enabled Chats</b>\n"
+    text = "<b>Amelia Enabled Chats</b>\n"
     for chat in chats:
         try:
             x = context.bot.get_chat(int(*chat))

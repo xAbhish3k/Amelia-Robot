@@ -136,9 +136,9 @@ def chatbot(update: Update, context: CallbackContext):
     if message.text and not message.document:
         if not kuki_message(context, message):
             return
-        anon = message.text
+        abhi = message.text
         bot.send_chat_action(chat_id, action="typing")
-        url = f"https://kukiapi.xyz/api/apikey=1891078417-KUKIkq4WMg5FV4/Amelia/Abhishek/message={anon}"
+        url = f"https://kukiapi.xyz/api/apikey=1891078417-KUKIkq4WMg5FV4/Amelia/Abhishek/message={abhi}"
         request = requests.get(url)
         results = json.loads(request.text)
         result = f"{results['reply']}"

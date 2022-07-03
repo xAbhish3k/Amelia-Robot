@@ -3,7 +3,7 @@ import json
 import os
 from typing import Optional
 
-from FallenRobot import (
+from AmeliaRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -13,7 +13,7 @@ from FallenRobot import (
     WOLVES,
     dispatcher,
 )
-from FallenRobot.modules.helper_funcs.chat_status import (
+from AmeliaRobot.modules.helper_funcs.chat_status import (
     dev_plus,
     sudo_plus,
     whitelist_plus,

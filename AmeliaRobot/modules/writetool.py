@@ -6,11 +6,11 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from AmeliaRobot import pbot as amelia, dispatcher, SUPPORT_CHAT
 
 
-@fallen.on_message(filters.command("write"))
+@amelia.on_message(filters.command("write"))
 async def handwrite(_, message: Message):
     if not message.reply_to_message:
         text = message.text.split(None, 1)[1]
-        m = await fallen.send_message(
+        m = await amelia.send_message(
             message.chat.id, "**ᴩʟᴇᴀsᴇ ᴡᴀɪᴛ...**\n\nʟᴇᴍᴍᴇ ᴡʀɪᴛᴇ ɪᴛ ᴏɴ ᴍʏ ᴄᴏᴩʏ..."
         )
         API = "https://single-developers.up.railway.app/write"

@@ -6,7 +6,7 @@
          "telegram",
          "group",
          "manager",
-         "Fallen"
+         "Amelia"
       ],   
    "repository": "https://github.com/xabhish3k/AmeliaRobot",
    "addons": [
@@ -56,7 +56,7 @@
          "value": "xabhish3k"
       },
       "SUPPORT_CHAT": {
-         "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to Fallen Support than consider you made an enemy.",
+         "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to Amelia Support than consider you made an enemy.",
          "required": true,
          "value": "warbotzsupport"
       },

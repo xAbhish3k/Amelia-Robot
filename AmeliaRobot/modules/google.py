@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import urllib
-from FallenRobot import telethn as tbot
+from AmeliaRobot import telethn as tbot
 import glob
 import io
 import os
@@ -268,7 +268,7 @@ async def apk(e):
             + app_link
             + "'>View in Play Store</a>"
         )
-        app_details += "\n\n===> Fallen <==="
+        app_details += "\n\n===> Amelia <==="
         await e.reply(app_details, link_preview=True, parse_mode="HTML")
     except IndexError:
         await e.reply("No result found in search. Please enter **Valid app name**")
@@ -284,5 +284,5 @@ __help__ = """
  ❍ /app <appname>*:* Searches for an app in Play Store and returns its details.
  ❍ /reverse: Does a reverse image search of the media which it was replied to.
  ❍ Anonymous <query>*:* Fallen answers the query
-  💡Ex: `Anonymous where is India?`
+  💡Ex: `Amelia where is India?`
 """

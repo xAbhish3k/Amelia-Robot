@@ -9,7 +9,7 @@ from pyrogram.types import InlineKeyboardButton
 
 from AmeliaRobot import aiohttpsession as session
 from AmeliaRobot import pbot as app
-from AneliaRobot.utils.errors import capture_err
+from AmeliaRobot.utils.errors import capture_err
 from AmeliaRobot.utils.pastebin import paste
 
 pattern = re.compile(r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$")

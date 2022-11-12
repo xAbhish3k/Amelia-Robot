@@ -10,8 +10,8 @@ from AmeliaRobot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from FallenRobot.modules.sql import afk_sql as sql
-from FallenRobot.modules.users import get_user_id
+from AmeliaRobot.modules.sql import afk_sql as sql
+from AmeliaRobot.modules.users import get_user_id
 
 AFK_GROUP = 7
 AFK_REPLY_GROUP = 8

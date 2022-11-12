@@ -9,7 +9,7 @@ from pyrogram.types import InlineKeyboardButton
 
 from AmeliaRobot import aiohttpsession as session
 from AmeliaRobot import pbot as app
-from AmeliaRobot.utils.errors import capture_err
+from AneliaRobot.utils.errors import capture_err
 from AmeliaRobot.utils.pastebin import paste
 
 pattern = re.compile(r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$")
@@ -30,7 +30,7 @@ async def isPreviewUp(preview: str) -> bool:
     return False
 
 
-@app.on_message(filters.command("paste") & ~filters.edited)
+@app.on_message(filters.command("paste"))
 @capture_err
 async def paste_func(_, message):
     if not message.reply_to_message:

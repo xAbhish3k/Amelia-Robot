@@ -1,20 +1,22 @@
-import html
-import random
-import AmeliaRobot.modules.truth_and_dare_string as truth_and_dare_string
+from telegram import Update
+from telegram.ext import CallbackContext
+
 from AmeliaRobot import dispatcher
-from telegram import ParseMode, Update, Bot
 from AmeliaRobot.modules.disable import DisableAbleCommandHandler
-from telegram.ext import CallbackContext, run_async
+
+from TruthDarePy import TD
+
+love = TD()
 
 
 def truth(update: Update, context: CallbackContext):
-    args = context.args
-    update.effective_message.reply_text(random.choice(truth_and_dare_string.TRUTH))
+    message = update.effective_message
+    message.reply_text(love.truth(lang="en"))
 
 
 def dare(update: Update, context: CallbackContext):
-    args = context.args
-    update.effective_message.reply_text(random.choice(truth_and_dare_string.DARE))
+    message = update.effective_message
+    message.reply_text(love.dare(lang="en"))
 
 
 TRUTH_HANDLER = DisableAbleCommandHandler("truth", truth)
@@ -23,9 +25,12 @@ DARE_HANDLER = DisableAbleCommandHandler("dare", dare)
 dispatcher.add_handler(TRUTH_HANDLER)
 dispatcher.add_handler(DARE_HANDLER)
 
+
 __help__ = """
 *Truth & Dare*
+
  ❍ /truth *:* Sends a random truth string.
  ❍ /dare *:* Sends a random dare string.
 """
+
 __mod_name__ = "Tʀᴜᴛʜ-Dᴀʀᴇ"

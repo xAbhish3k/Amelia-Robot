@@ -1,16 +1,16 @@
-from AmeliaRobot.modules.sql_extended.night_mode_sql import (
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from telethon import functions, types
+from telethon.tl.types import ChatBannedRights
+
+from AmeliaRobot import BOT_NAME
+from AmeliaRobot import telethn as tbot
+from AmeliaRobot.events import register
+from AmeliaRobot.modules.sql.night_mode_sql import (
     add_nightmode,
-    rmnightmode,
     get_all_chat_id,
     is_nightmode_indb,
+    rmnightmode,
 )
-from telethon.tl.types import ChatBannedRights
-from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from telethon import functions
-from telethon import types
-from AmeliaRobot.events import register
-from AmeliaRobot import telethn as tbot
-import os
 
 
 async def is_register_admin(chat, user):
@@ -64,7 +64,7 @@ openhehe = ChatBannedRights(
 )
 
 
-@register(pattern="^/night")
+@register(pattern="^/nightmode")
 async def close_ws(event):
     if event.is_group:
         if not (await is_register_admin(event.input_chat, event.message.sender_id)):
@@ -110,7 +110,7 @@ async def job_close():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                "12:00 Am, Group Is Closing Till 6 Am. Night Mode Started ! \n**Powered By Amelia Robot**",
+                f"**Night Mode Started**\n\n`Group Is Closing Till 6 Am, Only admins can messages in this chat.`\n\n__Powered By {BOT_NAME}__",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
@@ -123,7 +123,7 @@ async def job_close():
 
 # Run everyday at 12am
 scheduler = AsyncIOScheduler(timezone="Asia/Kolkata")
-scheduler.add_job(job_close, trigger="cron", hour=23, minute=55)
+scheduler.add_job(job_close, trigger="cron", hour=23, minute=59)
 scheduler.start()
 
 
@@ -135,7 +135,7 @@ async def job_open():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                "06:00 Am, Group Is Opening.\n**Powered By Amelia Robot**",
+                f"**Night Mode Ended**\n\n`Group is opening again now everyone can send messages in this chat.`\n__Powered By {BOT_NAME}__",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
@@ -148,7 +148,7 @@ async def job_open():
 
 # Run everyday at 06
 scheduler = AsyncIOScheduler(timezone="Asia/Kolkata")
-scheduler.add_job(job_open, trigger="cron", hour=6, minute=10)
+scheduler.add_job(job_open, trigger="cron", hour=6, minute=1)
 scheduler.start()
 
 __help__ = """

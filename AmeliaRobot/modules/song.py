@@ -1,12 +1,11 @@
 import os
-import asyncio
-import requests
-import aiohttp
-import yt_dlp
 
+import requests
+import yt_dlp
 from pyrogram import filters
 from youtube_search import YoutubeSearch
-from AmeliaRobot import pbot, SUPPORT_CHAT
+
+from AmeliaRobot import SUPPORT_CHAT, pbot
 
 
 def time_to_seconds(time):
@@ -39,12 +38,12 @@ def song(client, message):
         open(thumb_name, "wb").write(thumb.content)
 
         duration = results[0]["duration"]
-        url_suffix = results[0]["url_suffix"]
+        results[0]["url_suffix"]
         views = results[0]["views"]
 
     except Exception as e:
         m.edit(
-            "**😴 sᴏɴɢ ɴᴏᴛ ғᴏᴜɴᴅ ᴏɴ ʏᴏᴜᴛᴜʙᴇ.**\n\n» ᴍᴀʏʙᴇ ᴛᴜɴᴇ ɢᴀʟᴛɪ ʟɪᴋʜᴀ ʜᴏ, ᴩᴀᴅʜᴀɪ - ʟɪᴋʜᴀɪ ᴛᴏʜ ᴋᴀʀᴛᴀ ɴᴀʜɪ ᴛᴜ !"
+            "** sᴏɴɢ ɴᴏᴛ ғᴏᴜɴᴅ ᴏɴ ʏᴏᴜᴛᴜʙᴇ.**\n\n» ᴍᴀʏʙᴇ ᴛᴜɴᴇ ɢᴀʟᴛɪ ʟɪᴋʜᴀ ʜᴏ, ᴩᴀᴅʜᴀɪ - ʟɪᴋʜᴀɪ ᴛᴏʜ ᴋᴀʀᴛᴀ ɴᴀʜɪ ᴛᴜ !"
         )
         print(str(e))
         return
@@ -63,7 +62,6 @@ def song(client, message):
             audio_file,
             caption=rep,
             thumb=thumb_name,
-            parse_mode="md",
             title=title,
             duration=dur,
         )

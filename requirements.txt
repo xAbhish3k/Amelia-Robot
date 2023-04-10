@@ -17,6 +17,7 @@ feedparser==6.0.10
 future==0.18.3
 geopy==2.3.0
 gpytranslate==1.5.1
+hachoir
 heroku3
 html2text
 jikanpy

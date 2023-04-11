@@ -11,7 +11,7 @@ cachetools
 countryinfo
 currencyconverter
 dateparser
-emoji==2.2.0
+emoji==1.7.0
 emoji-country-flag
 feedparser
 future

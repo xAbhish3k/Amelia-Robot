@@ -11,7 +11,7 @@ class Config(object):
     EVENT_LOGS = "AmeliaLogupdate"
 
     SQLALCHEMY_DATABASE_URI = "postgres://gibcjdbt:g5ABuDeknFP_q5HgPHjXT50-6DtWSrcv@rajje.db.elephantsql.com/gibcjdbt"
-    MONGO_DB_URI = "mongodb+srv://sonu55:sonu55@cluster0.vqztrvk.mongodb.net/?retryWrites=true&w=majority"
+    MONGO_DB_URI = "mongodb+srv://erx:erx@cluster0.8oza6qj.mongodb.net/?retryWrites=true&w=majority"
     LOAD = []
     NO_LOAD = ["rss"]
     WEBHOOK = False

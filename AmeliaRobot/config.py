@@ -10,8 +10,8 @@ class Config(object):
     JOIN_LOGGER = "AmeliaLogupdate"
     EVENT_LOGS = "AmeliaLogupdate"
 
-    SQLALCHEMY_DATABASE_URI = ""
-    MONGO_DB_URI = ""
+    SQLALCHEMY_DATABASE_URI = "postgres://gibcjdbt:g5ABuDeknFP_q5HgPHjXT50-6DtWSrcv@rajje.db.elephantsql.com/gibcjdbt"
+    MONGO_DB_URI = "mongodb+srv://sonu55:sonu55@cluster0.vqztrvk.mongodb.net/?retryWrites=true&w=majority"
     LOAD = []
     NO_LOAD = ["rss"]
     WEBHOOK = False
@@ -22,7 +22,7 @@ class Config(object):
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
     DRAGONS =  ""
     ##List of id's - (not usernames) for developers who will have the same perms as the owner
-    DEV_USERS = ""
+    DEV_USERS = "6198858059"
     ##List of id's (not usernames) for users which are allowed to gban, but can also be banned.
     DEMONS = ""
     # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
@@ -41,8 +41,8 @@ class Config(object):
         "CAACAgUAAxkBAAEDafNhq5Z0DegqVzauwSighMw5cPWp8QACVgQAAuUG0FRXfCEuBziNzCIE"
     )
     ALLOW_EXCL = True
-    CASH_API_KEY = ""
-    TIME_API_KEY = ""
+    CASH_API_KEY = "PRPSG4AY3Q3H0QG0"
+    TIME_API_KEY = "S3J6EISOC17L"
     BL_CHATS = []
     SPAMMERS = None
     ALLOW_CHATS = True

@@ -1,14 +1,14 @@
 class Config(object):
     LOGGER = True
 
-    API_ID = 
-    API_HASH = ""
-    TOKEN = ""
-    OWNER_ID = 
-    OWNER_USERNAME = ""
-    SUPPORT_CHAT = ""
-    JOIN_LOGGER = ()
-    EVENT_LOGS = ()
+    API_ID = "7376402"
+    API_HASH = f3ed41c9c67ccf319f7d26dc25cecc47""
+    TOKEN = "1844045546:AAEVqdxLt7DXvgHfbjypyx9AhhtpCRgmYz4"
+    OWNER_ID = "2097320259"
+    OWNER_USERNAME = "xAbhish3k"
+    SUPPORT_CHAT = "warbotzsupport"
+    JOIN_LOGGER = "AmeliaLogupdate"
+    EVENT_LOG = "AmeliaLogupdate"
 
     SQLALCHEMY_DATABASE_URI = ""
     MONGO_DB_URI = ""

@@ -2,7 +2,7 @@ import requests
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
-from FallenRobot import TOKEN, dispatcher
+from AmeliaRobot import TOKEN, dispatcher
 
 url = "https://google-reverse-image-api.vercel.app/reverse"
 

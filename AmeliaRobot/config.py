@@ -8,7 +8,7 @@ class Config(object):
     OWNER_USERNAME = "xAbhish3k"
     SUPPORT_CHAT = "warbotzsupport"
     JOIN_LOGGER = "AmeliaLogupdate"
-    EVENT_LOG = "AmeliaLogupdate"
+    EVENT_LOGS = "AmeliaLogupdate"
 
     SQLALCHEMY_DATABASE_URI = ""
     MONGO_DB_URI = ""

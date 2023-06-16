@@ -15,7 +15,7 @@ def reverse(update: Update, context: CallbackContext):
         update.effective_message.reply_text("Reply to an image.")
 
     elif update.effective_message.reply_to_message.photo:
-        msg = update.effective_message.reply_text("```Uploded To NASA's Server```")
+        msg = update.effective_message.reply_text("```Uploded To NASA's Server.......📡```")
 
         photo_id = update.effective_message.reply_to_message.photo[-1].file_id
         get_path = requests.post(
@@ -33,7 +33,7 @@ def reverse(update: Update, context: CallbackContext):
                 f"[{result['data']['resultText']}]({result['data']['similarUrl']})",
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton("Link", url="similarUrl")]]
+                    [[InlineKeyboardButton("Link", url="https://t.me/warbotzsupport")]]
                 ),
             )
         else:

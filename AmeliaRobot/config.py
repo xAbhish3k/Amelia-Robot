@@ -3,14 +3,14 @@ class Config(object):
 
     API_ID = "7376402"
     API_HASH = "f3ed41c9c67ccf319f7d26dc25cecc47"
-    TOKEN = "1844045546:AAEVqdxLt7DXvgHfbjypyx9AhhtpCRgmYz4"
+    TOKEN = "1844045546:AAFBY5qRYlOZNjz8_D4mILHDlEHEv9--8iE"
     OWNER_ID = "2097320259"
     OWNER_USERNAME = "xAbhish3k"
     SUPPORT_CHAT = "warbotzsupport"
     JOIN_LOGGER = "AmeliaLogupdate"
     EVENT_LOGS = "AmeliaLogupdate"
 
-    SQLALCHEMY_DATABASE_URI = "postgres://gibcjdbt:g5ABuDeknFP_q5HgPHjXT50-6DtWSrcv@rajje.db.elephantsql.com/gibcjdbt"
+    SQLALCHEMY_DATABASE_URI = "postgres://jdlimncq:EJfDsICvSokbv5yB2ug5zpcXhO7jNrbd@arjuna.db.elephantsql.com/jdlimncq
     MONGO_DB_URI = "mongodb+srv://erx:erx@cluster0.8oza6qj.mongodb.net/?retryWrites=true&w=majority"
     LOAD = []
     NO_LOAD = ["rss"]
